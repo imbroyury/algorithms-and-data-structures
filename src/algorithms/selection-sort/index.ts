@@ -11,7 +11,7 @@ export const selectionSort = (input: number[]): number[] => {
 
         // find smallest element in the 'tail' after i
         for (let k = i + 1; k < input.length; k++) {
-            if (input[k] < input[i]) {
+            if (input[k] < input[minIdx]) {
                 minIdx = k;
             }
         }
